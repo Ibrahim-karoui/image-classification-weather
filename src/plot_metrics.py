@@ -5,10 +5,8 @@ import matplotlib.pyplot as plt
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 results_path = os.path.join(BASE_DIR, "runs", "classify", "train", "results.csv")
 
-# Lire le CSV correctement (pas de skiprows)
 results = pd.read_csv(results_path, sep=",")
 
-# Vérifier les colonnes
 print(results.columns.tolist())
 
 # Plot train/val loss
